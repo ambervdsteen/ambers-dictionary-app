@@ -1,11 +1,14 @@
 import React, {useState} from 'react';
 import axios from 'axios';
+import SearchResults from './SearchResults';
 
 function SearchEngine(){
 const [searchTerm, setSearchTerm]= useState("");
+const [searchTermResults, setSearchTermResults]=useState("null");
 
 function handleResponse(response){
     console.log(response.data.meanings[0]);
+    setSearchTermResults(response.data.meaning);
 }
 
     function search(e){
@@ -26,6 +29,7 @@ function handleResponse(response){
            <form onSubmit={search}>
             <input type="search" onChange={handleSearchTermChange}/>
              </form> 
+             <SearchResults results={searchTermResults}/>
         </div>
     )
 }
