@@ -1,6 +1,7 @@
 
 import './App.css';
 import SearchEngine from './SearchEngine.js';
+import logo from './amber-logo.png'
 
 function App() {
   return (
@@ -9,9 +10,11 @@ function App() {
         <div className="app-container">
       <header className="App-header">
 
+      <img src={logo} alt="logo"/>
+
         <p>
-        wilkommen to the dictionary app
-      
+       welcome to amber's dictionary app
+
         </p>
      
       </header>
