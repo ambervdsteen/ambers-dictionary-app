@@ -1,13 +1,15 @@
 import React from 'react';
+import Synonyms from './Synonyms'
 
 function MeaningResults({meaning}){
     console.log(meaning)
     return (
         <div className='MeaningResults'> 
             <h3> {meaning.partOfSpeech}</h3>
-            <p>{meaning.definition} </p>
+            <p> <strong>Definition: </strong>{meaning.definition} </p>
            <em> <p>{meaning.example}</p></em>
-            <p>{meaning.synonyms}</p>
+
+           <Synonyms synonyms={meaning.synonyms}/>
             <p>{meaning.antonyms}</p>
         </div>
     )
