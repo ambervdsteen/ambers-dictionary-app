@@ -10,16 +10,18 @@ function App() {
         <div className="app-container">
       <header className="App-header">
 
-      <img src={logo} alt="logo"/>
+      <img src={logo} alt="logo" className='img-fluid'/>
 
         <p>
-       welcome to amber's dictionary app
+       search for any word
 
         </p>
-     
+    
       </header>
-      <SearchEngine/>
+     
 
+      <SearchEngine/>
+     
     
     </div>
     <footer>

@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import axios from 'axios';
 import SearchResults from './SearchResults';
+import './SearchEngine.css'
 
 function SearchEngine(){
 const [searchTerm, setSearchTerm]= useState("");
@@ -26,12 +27,13 @@ function handleResponse(response){
 
     return (
         <div className='SearchEngine'>
+       <section className='SearchSection'>
            <form onSubmit={search}>
             <input type="search" onChange={handleSearchTermChange}/>
              </form> 
-           
+             </section>
              <SearchResults results={searchTermResults}/>
-            
+             
         </div>
     )
 }

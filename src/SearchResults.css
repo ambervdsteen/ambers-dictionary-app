@@ -1,0 +1,9 @@
+
+
+.SearchResults{
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 10px;
+}
