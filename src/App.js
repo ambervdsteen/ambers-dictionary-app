@@ -18,11 +18,9 @@ function App() {
         </p>
     
       </header>
-     
 
       <SearchEngine/>
      
-    
     </div>
     <footer>
         this page was built by Amber van der Steen, open-sourced on Github, and hosted on Netlify
