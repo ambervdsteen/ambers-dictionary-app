@@ -7,19 +7,20 @@ function SearchResults({results}){
     if (results){
     return (
         <div className="SearchResults">
-            <section className='ResultsSection'>
+            <section>
             <h3>
      {results.word}
    <br/>
      phonetic: {results.phonetic}
-     </h3></section>
-  
+     </h3>
+     </section>
+     <section>
      {results.meanings.map(function(meanings, index){
         return <div key={index}>
             <MeaningResults meaning={meanings}/>
             </div>;
 })}        
-        </div>)
+       </section> </div>)
     }
     else{
         return null;

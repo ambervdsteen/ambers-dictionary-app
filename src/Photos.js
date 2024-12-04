@@ -5,8 +5,8 @@ function Photos ({photos}){
     if (photos) {
         return(
 
-    <section className='Photos'>
-    <div className='row d-flex'>
+        <section className='Photos'>
+        <div className='row'>
         {photos.map(function(photos, index){
 
             return (

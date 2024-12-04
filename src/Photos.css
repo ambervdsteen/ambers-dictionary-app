@@ -6,3 +6,8 @@ section{
     padding: 20px;
     margin-top: 10px;
 }
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
