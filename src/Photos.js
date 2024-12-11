@@ -6,7 +6,6 @@ function Photos ({photos}){
         return(
       
         <section className='Photos'>
-            <div className='container'>
         <div className="row">
 
         {photos.map(function(photos, index){
@@ -20,7 +19,6 @@ function Photos ({photos}){
             );
         })}
 
-    </div>
     </div>
     </section>
    
