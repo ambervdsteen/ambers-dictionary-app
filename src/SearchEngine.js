@@ -7,7 +7,7 @@ import Photos from './Photos.js'
 function SearchEngine(){
 const [searchTerm, setSearchTerm]= useState("");
 const [searchTermResults, setSearchTermResults]=useState(null);
-const [photos, setPhotos]=useState([]);
+const [photos, setPhotos]=useState("");
 
 
 

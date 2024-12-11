@@ -3,7 +3,6 @@ import MeaningResults from './MeaningResults';
 import './SearchResults.css'
 
 function SearchResults({results}){
-    console.log(results)
     if (results){
     return (
         <div className="SearchResults">
