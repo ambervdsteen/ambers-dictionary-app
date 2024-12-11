@@ -15,9 +15,9 @@ function SearchResults({results}){
      </section>
      <section>
      {results.meanings.map(function(meanings, index){
-        return <div key={index}>
+        return <section key={index}>
             <MeaningResults meaning={meanings}/>
-            </div>;
+            </section>;
 })}        
        </section> </div>)
     }
