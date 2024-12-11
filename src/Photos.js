@@ -11,7 +11,7 @@ function Photos ({photos}){
 
         {photos.map(function(photos, index){
             return (
-            <div className="col-sm-4" key={index}> 
+            <div className="col-md-4 mb-4" key={index}> 
             <a href={photos.src.original} target='_blank' rel='noopener noreferrer'>
             <img src={photos.src.landscape} className='img-fluid' alt='imagedict'/>
             </a>
